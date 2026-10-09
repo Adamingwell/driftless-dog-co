@@ -54,6 +54,22 @@
   </script>
 
   <style>
+    .demo-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(220, 38, 38, 0.18); /* Faint red / maroon */
+  white-space: nowrap;
+  pointer-events: none; /* Allows clicks/scrolling to pass right through */
+  user-select: none;
+  z-index: 999999; /* Stays above all modals and headers */
+}
     .glass-card {
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
@@ -86,7 +102,8 @@
 <body class="bg-bark-50 text-slate-800 font-sans antialiased selection:bg-driftless-600 selection:text-white">
 
   <!-- Announcement Topbar -->
-   <h1>THIS IS A DEMO! NONE OF THIS IS LIVE!</h1>
+   <!-- Watermark Overlay -->
+<div class="demo-watermark">DEMO ONLY — NOT FUNCTIONAL</div>
   <div class="bg-driftless-900 text-white text-xs sm:text-sm py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4 text-center sm:text-left">
       <div class="flex items-center gap-2">
