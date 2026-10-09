@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driftless Dog Co LLC | Gentle, Professional Dog Grooming in Sparta, WI</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            driftless: {
+              50: '#f3f7f4',
+              100: '#e3ece4',
+              200: '#c8dbcb',
+              300: '#a3c2a8',
+              600: '#487550',
+              700: '#395e40',
+              800: '#2d4b33',
+              900: '#1b3122',
+            },
+            bark: {
+              50: '#faf7f2',
+              100: '#f3ece1',
+              200: '#e5d7c3',
+              600: '#8e6c46',
+              800: '#543d25',
+              900: '#342517',
+            },
+            honey: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a3c2a8;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #487550;
+    }
+  </style>
+</head>
+<body class="bg-bark-50 text-slate-800 font-sans antialiased selection:bg-driftless-600 selection:text-white">
+
+  <!-- Announcement Topbar -->
+  <div class="bg-driftless-900 text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-honey-400 animate-pulse"></span>
+        <p>Serving Sparta, Tomah & Monroe County | Accepting New Canine Clients</p>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium text-driftless-200">
+        <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-honey-400"></i> 118 N Water St, Sparta, WI</span>
+        <span class="hidden md:inline-block">|</span>
+        <a href="tel:6082693647" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-honey-400"></i> (608) 269-DOGS
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-bark-100 shadow-sm transition-all duration-200" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-driftless-800 to-driftless-600 flex items-center justify-center text-white shadow-md shadow-driftless-800/20 group-hover:scale-105 transition-transform duration-200">
+          <i data-lucide="sparkles" class="w-6 h-6 text-honey-400"></i>
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-xl tracking-tight text-driftless-900 block leading-tight">
+            Driftless Dog <span class="text-driftless-600">Co.</span>
+          </span>
+          <span class="text-[11px] font-semibold text-bark-600 uppercase tracking-widest block">Sparta, Wisconsin</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-700">
+        <a href="#services" class="hover:text-driftless-700 transition">Services & Rates</a>
+        <a href="#booking-estimator" class="hover:text-driftless-700 transition">Instant Quote & Book</a>
+        <a href="#about" class="hover:text-driftless-700 transition">Our Salon</a>
+        <a href="#coat-advisor" class="hover:text-driftless-700 transition">Coat Care Advisor</a>
+        <a href="#gallery" class="hover:text-driftless-700 transition">Before & After</a>
+        <a href="#faq" class="hover:text-driftless-700 transition">FAQ</a>
+        <a href="#contact" class="hover:text-driftless-700 transition">Visit Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="#booking-estimator" class="hidden sm:inline-flex items-center gap-2 bg-driftless-700 hover:bg-driftless-800 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-driftless-700/20 hover:shadow-lg transition-all duration-200">
+          <i data-lucide="calendar" class="w-4 h-4 text-honey-400"></i>
+          <span>Book Appointment</span>
+        </a>
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-bark-100 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-bark-100 px-6 py-5 shadow-xl transition-all">
+      <div class="flex flex-col gap-4 font-medium text-slate-700">
+        <a href="#services" class="mobile-nav-link py-2 border-b border-bark-50">Services & Rates</a>
+        <a href="#booking-estimator" class="mobile-nav-link py-2 border-b border-bark-50">Instant Quote & Booking</a>
+        <a href="#about" class="mobile-nav-link py-2 border-b border-bark-50">About Driftless Dog Co</a>
+        <a href="#coat-advisor" class="mobile-nav-link py-2 border-b border-bark-50">Coat Care Schedule</a>
+        <a href="#gallery" class="mobile-nav-link py-2 border-b border-bark-50">Client Gallery</a>
+        <a href="#faq" class="mobile-nav-link py-2 border-b border-bark-50">Health & Salon FAQs</a>
+        <a href="#contact" class="mobile-nav-link py-2">Hours & Location</a>
+        <a href="#booking-estimator" class="mobile-nav-link text-center mt-2 bg-driftless-700 text-white py-3 rounded-xl font-semibold shadow">Book Online</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-24 bg-gradient-to-b from-driftless-50 via-bark-50 to-white">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-driftless-100/60 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-honey-400/10 blur-2xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 bg-driftless-100 border border-driftless-200/80 px-4 py-1.5 rounded-full text-driftless-800 text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-driftless-600"></span>
+              Relaxed, Fear-Free Inspired Grooming in Monroe County
+            </div>
+
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-driftless-900 tracking-tight leading-[1.15]">
+              Gentle, Patient Grooming for your <span class="text-driftless-600 underline decoration-honey-500 decoration-wavy decoration-2">Best Friend</span>.
+            </h1>
+
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Located right in the heart of Sparta, WI, Driftless Dog Co LLC provides stress-free, one-on-one grooming treatments. Organic skin-nourishing washes, gentle warm-air hand drying, and tailored styling crafted for Wisconsin pups.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#booking-estimator" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-driftless-700 hover:bg-driftless-800 text-white px-7 py-3.5 rounded-xl font-semibold shadow-lg shadow-driftless-700/25 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                <i data-lucide="calculator" class="w-5 h-5 text-honey-400"></i>
+                <span>Get Instant Quote & Book</span>
+              </a>
+              <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-bark-100 text-slate-700 border border-bark-200 px-6 py-3.5 rounded-xl font-semibold transition">
+                <span>View Full Menu</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <div class="pt-6 border-t border-bark-200 grid grid-cols-3 gap-3 text-center sm:text-left">
+              <div>
+                <div class="font-heading font-bold text-2xl text-driftless-800">1-on-1</div>
+                <div class="text-xs text-slate-500 font-medium">Individual Attention</div>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-2xl text-driftless-800">100%</div>
+                <div class="text-xs text-slate-500 font-medium">Natural Botanical Washes</div>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-2xl text-driftless-800">5.0 ★</div>
+                <div class="text-xs text-slate-500 font-medium">Sparta Dog Parent Loved</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="absolute inset-0 bg-gradient-to-tr from-driftless-700 to-honey-500 rounded-3xl transform rotate-2 scale-102 opacity-15"></div>
+              
+              <div class="relative bg-white rounded-3xl p-6 shadow-xl border border-bark-100 space-y-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-driftless-100 flex items-center justify-center text-driftless-700 font-bold">
+                      <i data-lucide="heart" class="w-5 h-5 fill-driftless-600 text-driftless-600"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-sm font-bold text-slate-800">Sparta's Calm Grooming Haven</h2>
+                      <p class="text-xs text-slate-500">No rushed assembly line grooms</p>
+                    </div>
+                  </div>
+                  <span class="badge-pill bg-driftless-100 text-driftless-800 font-bold">Open Tue - Sat</span>
+                </div>
+
+                <div class="relative h-64 rounded-2xl overflow-hidden shadow-inner group">
+                  <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" 
+                       alt="Golden retriever getting pampered at Driftless Dog Co Sparta WI" 
+                       class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                       onerror="this.src='https://placehold.co/800x500/395e40/ffffff?text=Driftless+Dog+Co+Sparta+WI'">
+                  <div class="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur-sm rounded-xl p-3 flex items-center justify-between text-xs font-medium">
+                    <span class="flex items-center gap-1.5 text-driftless-900 font-semibold">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-driftless-600"></i> Heated hydro-surge bath
+                    </span>
+                    <span class="text-bark-600 font-bold">Safe Hand Drying</span>
+                  </div>
+                </div>
+
+                <div class="space-y-2.5 text-xs text-slate-600">
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-driftless-600 shrink-0"></i>
+                    <span>Certified gentle groomer specialized in anxious & senior dogs</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="sparkle" class="w-4 h-4 text-honey-500 shrink-0"></i>
+                    <span>Tearless blueberry facial & paw butter included in signature cuts</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-driftless-600 shrink-0"></i>
+                    <span>Convenient parking near Beaver Creek & Sparta trails</span>
+                  </div>
+                </div>
+
+                <div class="bg-driftless-50 rounded-2xl p-4 flex items-center justify-between border border-driftless-100">
+                  <div>
+                    <span class="text-xs text-driftless-700 font-bold block">Need a quick nail grind?</span>
+                    <span class="text-[11px] text-slate-500">Walk-in nail trims available 11am-2pm</span>
+                  </div>
+                  <span class="font-heading font-extrabold text-base text-driftless-900">$15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Booking & Price Estimator -->
+    <section id="booking-estimator" class="py-16 bg-white border-y border-bark-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold text-driftless-700 bg-driftless-100 px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+            <i data-lucide="sliders" class="w-3.5 h-3.5"></i> Custom Price Calculator
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Estimate & Book Your Dog's Spa Day
+          </h2>
+          <p class="text-slate-600 mt-2 text-sm sm:text-base">
+            Configure your pet's size, desired treatment, and special pampering add-ons. Get an immediate transparent estimate and submit your reservation request.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          
+          <div class="lg:col-span-7 bg-bark-50/70 border border-bark-200/80 rounded-3xl p-6 sm:p-8 space-y-8 shadow-sm">
+            
+            <!-- Step 1 -->
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-heading font-bold text-lg text-slate-900 flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-full bg-driftless-700 text-white flex items-center justify-center text-xs">1</span>
+                  Dog Information & Weight Class
+                </h3>
+                <span class="text-xs text-slate-400 font-medium">Step 1 of 4</span>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label for="dogName" class="block text-xs font-bold text-slate-700 mb-1.5">Dog's Name *</label>
+                  <input type="text" id="dogName" placeholder="e.g. Copper, Bella" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white" required>
+                </div>
+                <div>
+                  <label for="dogBreed" class="block text-xs font-bold text-slate-700 mb-1.5">Breed / Mix *</label>
+                  <input type="text" id="dogBreed" placeholder="e.g. Golden Retriever, Doodle, Beagle" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white" required>
+                </div>
+              </div>
+
+              <label class="block text-xs font-bold text-slate-700 mb-2">Select Weight Category</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="sizeOptionsContainer">
+                <button type="button" data-size="small" data-price-mult="1.0" class="size-btn active p-3 rounded-xl border-2 border-driftless-600 bg-driftless-50 text-left transition hover:border-driftless-600">
+                  <span class="block text-xs font-bold text-slate-900">Small</span>
+                  <span class="text-[11px] text-slate-500">Under 20 lbs</span>
+                </button>
+                <button type="button" data-size="medium" data-price-mult="1.25" class="size-btn p-3 rounded-xl border border-slate-200 bg-white text-left transition hover:border-driftless-600">
+                  <span class="block text-xs font-bold text-slate-900">Medium</span>
+                  <span class="text-[11px] text-slate-500">20 - 45 lbs</span>
+                </button>
+                <button type="button" data-size="large" data-price-mult="1.55" class="size-btn p-3 rounded-xl border border-slate-200 bg-white text-left transition hover:border-driftless-600">
+                  <span class="block text-xs font-bold text-slate-900">Large</span>
+                  <span class="text-[11px] text-slate-500">46 - 75 lbs</span>
+                </button>
+                <button type="button" data-size="xlarge" data-price-mult="1.95" class="size-btn p-3 rounded-xl border border-slate-200 bg-white text-left transition hover:border-driftless-600">
+                  <span class="block text-xs font-bold text-slate-900">X-Large / Doodles</span>
+                  <span class="text-[11px] text-slate-500">76+ lbs or Dense</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-heading font-bold text-lg text-slate-900 flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-full bg-driftless-700 text-white flex items-center justify-center text-xs">2</span>
+                  Select Primary Service Package
+                </h3>
+                <span class="text-xs text-slate-400 font-medium">Step 2 of 4</span>
+              </div>
+
+              <div class="space-y-3" id="servicesRadioGroup">
+                <label class="service-card flex items-start gap-4 p-4 rounded-2xl border-2 border-driftless-600 bg-white cursor-pointer transition shadow-xs">
+                  <input type="radio" name="groomService" value="full-groom" data-base="65" data-duration="120" class="mt-1 text-driftless-600 focus:ring-driftless-600" checked>
+                  <div class="flex-1">
+                    <div class="flex justify-between items-baseline">
+                      <span class="font-bold text-sm text-slate-900">The Driftless Signature Full Groom</span>
+                      <span class="text-xs font-extrabold text-driftless-700">From $65</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1">Full body custom breed haircut, warm bath, double shampoo, fluff dry, sanitary trim, pads trimmed, ear cleaning & nail grind.</p>
+                  </div>
+                </label>
+
+                <label class="service-card flex items-start gap-4 p-4 rounded-2xl border border-slate-200 bg-white cursor-pointer transition hover:border-driftless-400">
+                  <input type="radio" name="groomService" value="bath-tidy" data-base="45" data-duration="75" class="mt-1 text-driftless-600 focus:ring-driftless-600">
+                  <div class="flex-1">
+                    <div class="flex justify-between items-baseline">
+                      <span class="font-bold text-sm text-slate-900">Bath, Brush & Tidy</span>
+                      <span class="text-xs font-extrabold text-driftless-700">From $45</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1">Hydrosurge massage bath, blueberry facial wash, hand blow-dry, thorough brush-out, paw & face touch-up, nail trim.</p>
+                  </div>
+                </label>
+
+                <label class="service-card flex items-start gap-4 p-4 rounded-2xl border border-slate-200 bg-white cursor-pointer transition hover:border-driftless-400">
+                  <input type="radio" name="groomService" value="deshed" data-base="55" data-duration="90" class="mt-1 text-driftless-600 focus:ring-driftless-600">
+                  <div class="flex-1">
+                    <div class="flex justify-between items-baseline">
+                      <span class="font-bold text-sm text-slate-900">Sparta De-Shedding Deep Spa</span>
+                      <span class="text-xs font-extrabold text-driftless-700">From $55</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1">Specialized fur-release wash, high-velocity undercoat blowout, rake brush-out & carding to drastically eliminate shedding.</p>
+                  </div>
+                </label>
+
+                <label class="service-card flex items-start gap-4 p-4 rounded-2xl border border-slate-200 bg-white cursor-pointer transition hover:border-driftless-400">
+                  <input type="radio" name="groomService" value="puppy-first" data-base="35" data-duration="45" class="mt-1 text-driftless-600 focus:ring-driftless-600">
+                  <div class="flex-1">
+                    <div class="flex justify-between items-baseline">
+                      <span class="font-bold text-sm text-slate-900">Puppy Introduction Spa (&lt; 5 Months)</span>
+                      <span class="text-xs font-extrabold text-driftless-700">From $35</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1">Gentle slow-paced desensitization, warm bath, soft scissor face & feet trim, gentle sound exposure, and lots of treats!</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-heading font-bold text-lg text-slate-900 flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-full bg-driftless-700 text-white flex items-center justify-center text-xs">3</span>
+                  Spa Upgrades & Tailored Add-Ons
+                </h3>
+                <span class="text-xs text-slate-400 font-medium">Optional</span>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-3" id="addOnsContainer">
+                <label class="addon-item flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-driftless-500 transition">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" value="teeth" data-price="12" data-min="10" class="addon-checkbox rounded text-driftless-700 focus:ring-driftless-600 w-4 h-4">
+                    <span class="text-xs font-semibold text-slate-800">Fresh Mint Teeth Brushing</span>
+                  </div>
+                  <span class="text-xs font-bold text-driftless-800">+$12</span>
+                </label>
+
+                <label class="addon-item flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-driftless-500 transition">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" value="blueberry" data-price="8" data-min="5" class="addon-checkbox rounded text-driftless-700 focus:ring-driftless-600 w-4 h-4">
+                    <span class="text-xs font-semibold text-slate-800">Blueberry Tear-Stain Facial</span>
+                  </div>
+                  <span class="text-xs font-bold text-driftless-800">+$8</span>
+                </label>
+
+                <label class="addon-item flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-driftless-500 transition">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" value="pawbalm" data-price="10" data-min="5" class="addon-checkbox rounded text-driftless-700 focus:ring-driftless-600 w-4 h-4">
+                    <span class="text-xs font-semibold text-slate-800">Organic Paw Pad & Nose Balm</span>
+                  </div>
+                  <span class="text-xs font-bold text-driftless-800">+$10</span>
+                </label>
+
+                <label class="addon-item flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-driftless-500 transition">
+                  <div class="flex items-center gap-2.5">
+                    <input type="checkbox" value="dematting" data-price="20" data-min="20" class="addon-checkbox rounded text-driftless-700 focus:ring-driftless-600 w-4 h-4">
+                    <span class="text-xs font-semibold text-slate-800">Deep Knot / Dematting Care</span>
+                  </div>
+                  <span class="text-xs font-bold text-driftless-800">+$20</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-heading font-bold text-lg text-slate-900 flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-full bg-driftless-700 text-white flex items-center justify-center text-xs">4</span>
+                  Preferred Date & Contact Details
+                </h3>
+                <span class="text-xs text-slate-400 font-medium">Final Step</span>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label for="bookingDate" class="block text-xs font-bold text-slate-700 mb-1.5">Preferred Date (Tue-Sat) *</label>
+                  <input type="date" id="bookingDate" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white" required>
+                </div>
+                <div>
+                  <label for="bookingTime" class="block text-xs font-bold text-slate-700 mb-1.5">Preferred Time Window *</label>
+                  <select id="bookingTime" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white">
+                    <option value="Morning (8:30 AM - 10:30 AM)">Morning (8:30 AM - 10:30 AM)</option>
+                    <option value="Midday (11:00 AM - 1:00 PM)">Midday (11:00 AM - 1:00 PM)</option>
+                    <option value="Afternoon (1:30 PM - 4:00 PM)">Afternoon (1:30 PM - 4:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-3 gap-4 mb-4">
+                <div>
+                  <label for="ownerName" class="block text-xs font-bold text-slate-700 mb-1.5">Owner Full Name *</label>
+                  <input type="text" id="ownerName" placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white" required>
+                </div>
+                <div>
+                  <label for="ownerPhone" class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+                  <input type="tel" id="ownerPhone" placeholder="(608) 555-0192" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white" required>
+                </div>
+                <div>
+                  <label for="ownerEmail" class="block text-xs font-bold text-slate-700 mb-1.5">Email Address</label>
+                  <input type="email" id="ownerEmail" placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white">
+                </div>
+              </div>
+
+              <div>
+                <label for="specialNotes" class="block text-xs font-bold text-slate-700 mb-1.5">Temperament or Medical Notes (Optional)</label>
+                <textarea id="specialNotes" rows="2" placeholder="e.g. Nervous around dryers, hip dysplasia on left side, allergic to lavender..." class="w-full px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-driftless-600 text-sm bg-white"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Sticky Summary -->
+          <div class="lg:col-span-5 sticky top-28">
+            <div class="bg-driftless-900 text-white rounded-3xl p-6 sm:p-7 shadow-xl border border-driftless-800 space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-driftless-800 pb-4">
+                <div>
+                  <span class="text-xs uppercase tracking-wider text-honey-400 font-bold block">Live Estimation</span>
+                  <h4 class="font-heading text-xl font-bold">Appointment Summary</h4>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-driftless-300">Est. Duration</span>
+                  <div id="summaryDuration" class="font-bold text-honey-400 text-sm">~ 2 hrs 00 mins</div>
+                </div>
+              </div>
+
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between items-center text-driftless-100">
+                  <span id="summaryDogLabel">Pup: <strong id="summaryDogName" class="text-white">Your Pup</strong> (<span id="summarySizeLabel">Small</span>)</span>
+                  <span class="text-xs text-driftless-300">Base weight tier</span>
+                </div>
+
+                <div class="flex justify-between items-center text-driftless-100">
+                  <span id="summaryServiceName" class="truncate max-w-[200px]">Full Groom</span>
+                  <span id="summaryServicePrice" class="font-semibold text-white">$65.00</span>
+                </div>
+
+                <div id="summaryAddonsList" class="space-y-1.5 pt-2 border-t border-driftless-800/80 text-xs text-driftless-200">
+                  <p class="italic text-driftless-300">No add-ons selected</p>
+                </div>
+              </div>
+
+              <div class="bg-driftless-800/80 rounded-2xl p-4 border border-driftless-700/60">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <span class="text-xs text-driftless-300 block font-medium">Estimated Investment:</span>
+                    <span class="text-xs text-honey-400 font-semibold">*Final rate subject to coat condition</span>
+                  </div>
+                  <div class="text-right">
+                    <span id="summaryTotal" class="font-heading font-extrabold text-3xl text-honey-400">$65.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" id="confirmBookingBtn" class="w-full bg-honey-500 hover:bg-honey-600 text-slate-950 font-heading font-extrabold py-3.5 px-6 rounded-xl shadow-lg transition duration-200 flex items-center justify-center gap-2 group">
+                <span>Request Appointment Now</span>
+                <i data-lucide="check" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+              </button>
+
+              <div class="text-[11px] text-driftless-300 text-center leading-relaxed">
+                <i data-lucide="shield" class="w-3.5 h-3.5 inline mr-1 text-honey-400"></i> No payment required now. We confirm every reservation by call/text within 4 business hours.
+              </div>
+
+            </div>
+
+            <div class="mt-4 bg-bark-100 rounded-2xl p-4 border border-bark-200 text-xs text-bark-900 flex items-center gap-3">
+              <i data-lucide="info" class="w-5 h-5 text-driftless-700 shrink-0"></i>
+              <p>Rabies vaccination proof is required for all dogs over 4 months prior to appointment.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm hidden">
+      <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative animate-in fade-in zoom-in-95 duration-200">
+        
+        <button id="closeModalBtn" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+
+        <div class="text-center space-y-3 mb-6">
+          <div class="w-16 h-16 bg-driftless-100 text-driftless-700 rounded-full flex items-center justify-center mx-auto shadow-inner">
+            <i data-lucide="party-popper" class="w-8 h-8 text-driftless-600"></i>
+          </div>
+          <span class="badge-pill bg-driftless-100 text-driftless-800">Booking Request Received!</span>
+          <h3 class="font-heading text-2xl font-bold text-slate-900">We Can't Wait to Meet Your Pup!</h3>
+          <p class="text-xs text-slate-600">Your reservation has been penciled in. Our groomer in Sparta, WI will review and send a confirmation text.</p>
+        </div>
+
+        <div class="bg-bark-50 rounded-2xl p-4 border border-bark-200 text-xs space-y-2 mb-6">
+          <div class="flex justify-between border-b border-bark-200 pb-2">
+            <span class="text-slate-500">Booking Ref:</span>
+            <span id="modalRefCode" class="font-mono font-bold text-driftless-800">#DDC-8491</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Dog Name:</span>
+            <span id="modalDogName" class="font-semibold text-slate-800">Copper</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Selected Service:</span>
+            <span id="modalServiceName" class="font-semibold text-slate-800">The Driftless Signature Groom</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Requested Window:</span>
+            <span id="modalDateTime" class="font-semibold text-slate-800">Tomorrow @ 9:00 AM</span>
+          </div>
+          <div class="flex justify-between border-t border-bark-200 pt-2 font-bold text-slate-900 text-sm">
+            <span>Estimated Cost:</span>
+            <span id="modalTotal" class="text-driftless-700">$65.00</span>
+          </div>
+        </div>
+
+        <div class="space-y-2 mb-6">
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wide">Appointment Checklist:</h4>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Have current Rabies certificate handy or emailed.
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Please take your dog on a quick relief walk before arrival.
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Dogs must enter on a standard leash (no flexi-leads).
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-3">
+          <button id="printConfirmationBtn" class="flex-1 border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5 transition">
+            <i data-lucide="printer" class="w-4 h-4"></i> Print Summary
+          </button>
+          <button id="doneModalBtn" class="flex-1 bg-driftless-700 hover:bg-driftless-800 text-white font-semibold py-2.5 rounded-xl text-xs transition">
+            Got it, Thank You!
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 bg-bark-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-bold text-driftless-700 uppercase tracking-widest bg-driftless-100 px-3 py-1 rounded-full">
+            Transparent Care
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Our Handcrafted Grooming Services
+          </h2>
+          <p class="text-slate-600 mt-2 text-sm sm:text-base">
+            Every session is scheduled with ample buffer time so your pup never feels rushed or overwhelmed by loud equipment.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white rounded-3xl p-7 border border-bark-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <span class="p-3 rounded-2xl bg-driftless-50 text-driftless-700">
+                  <i data-lucide="scissors" class="w-6 h-6"></i>
+                </span>
+                <span class="text-xs font-bold text-slate-400">1.5 - 2.5 hrs</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Signature Full Groom</h3>
+              <p class="text-xs text-slate-500 mb-5">Ideal for continuous coat maintenance, breed-standard trims, or summer puppy cuts.</p>
+              
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Full customized haircut & scissor styling</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Soothing double botanical shampoo</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Warm blow-out & brush out</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Sanitary & paw pad trim</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Ear cleaning & gentle nail grinding</li>
+              </ul>
+            </div>
+            <div class="pt-5 border-t border-bark-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block">Starting from</span>
+                <span class="font-heading font-extrabold text-2xl text-driftless-800">$65</span>
+              </div>
+              <a href="#booking-estimator" class="text-xs font-bold text-driftless-700 hover:text-driftless-900 flex items-center gap-1">Select package &rarr;</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 border-2 border-driftless-600 shadow-md relative flex flex-col justify-between">
+            <div class="absolute -top-3.5 right-6 bg-driftless-700 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+              Most Popular
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <span class="p-3 rounded-2xl bg-driftless-50 text-driftless-700">
+                  <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </span>
+                <span class="text-xs font-bold text-slate-400">1 - 1.5 hrs</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Bath, Brush & Tidy</h3>
+              <p class="text-xs text-slate-500 mb-5">Perfect in-between haircut maintenance to keep coats squeaky clean and odor-free.</p>
+              
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Deep hydrosurge hydrotherapy bath</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Hypoallergenic tearless facial</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Face, eye visor & paw outline tidy</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Sanitary trim & anal gland inspection</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Nail trimming & round buffering</li>
+              </ul>
+            </div>
+            <div class="pt-5 border-t border-bark-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block">Starting from</span>
+                <span class="font-heading font-extrabold text-2xl text-driftless-800">$45</span>
+              </div>
+              <a href="#booking-estimator" class="text-xs font-bold text-driftless-700 hover:text-driftless-900 flex items-center gap-1">Select package &rarr;</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 border border-bark-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <span class="p-3 rounded-2xl bg-driftless-50 text-driftless-700">
+                  <i data-lucide="wind" class="w-6 h-6"></i>
+                </span>
+                <span class="text-xs font-bold text-slate-400">1.5 - 2 hrs</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Driftless De-Shedding Spa</h3>
+              <p class="text-xs text-slate-500 mb-5">Specially formulated for Shepherds, Huskies, Labs, and heavy double coats.</p>
+              
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Specialized deshedding shampoo & soak</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> High-velocity undercoat release blowout</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Carding, raking & slicker dematting</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Feather trimming around feet & hocks</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-driftless-600"></i> Ear flush & nail grind included</li>
+              </ul>
+            </div>
+            <div class="pt-5 border-t border-bark-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block">Starting from</span>
+                <span class="font-heading font-extrabold text-2xl text-driftless-800">$55</span>
+              </div>
+              <a href="#booking-estimator" class="text-xs font-bold text-driftless-700 hover:text-driftless-900 flex items-center gap-1">Select package &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-bark-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-slate-900">Walk-In & Quick Care Services</h3>
+              <p class="text-xs text-slate-500">No appointment necessary Tuesday – Friday between 11:00 AM and 2:00 PM</p>
+            </div>
+            <span class="badge-pill bg-honey-400/20 text-honey-600 self-start sm:self-auto font-bold">Fast 10-Minute Turnaround</span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+            <div class="p-4 rounded-2xl bg-bark-50 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-900 block">Nail Trim & Dremel</span>
+                <span class="text-slate-500 text-[11px]">Smooth rounded finish</span>
+              </div>
+              <span class="font-heading font-bold text-base text-driftless-800">$15</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-bark-50 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-900 block">Teeth Cleaning</span>
+                <span class="text-slate-500 text-[11px]">Enzyme spray & brush</span>
+              </div>
+              <span class="font-heading font-bold text-base text-driftless-800">$12</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-bark-50 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-900 block">Face & Eye Tidy</span>
+                <span class="text-slate-500 text-[11px]">Clear eyesight trim</span>
+              </div>
+              <span class="font-heading font-bold text-base text-driftless-800">$15</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-bark-50 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-900 block">Ear Cleaning & Pluck</span>
+                <span class="text-slate-500 text-[11px]">Gentle wax wash</span>
+              </div>
+              <span class="font-heading font-bold text-base text-driftless-800">$12</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Coat Care Advisor Section -->
+    <section id="coat-advisor" class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-gradient-to-tr from-driftless-900 to-driftless-800 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+          <div class="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-honey-400/10 blur-xl pointer-events-none"></div>
+
+          <div class="max-w-2xl relative z-10 space-y-3">
+            <span class="text-xs uppercase font-extrabold tracking-widest text-honey-400">Canine Wellness Advisor</span>
+            <h2 class="font-heading text-3xl font-extrabold">How often should your pup be groomed?</h2>
+            <p class="text-xs sm:text-sm text-driftless-200">
+              Select your dog's coat type below to reveal our professional groomer schedule recommendations and Sparta seasonal maintenance tips.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 relative z-10" id="coatAdvisorButtons">
+            <button type="button" data-coat="doodle" class="coat-btn active bg-white text-slate-900 p-4 rounded-2xl text-left font-semibold text-xs border-2 border-honey-400 transition">
+              <span class="block text-sm font-bold">Curly / Doodle</span>
+              <span class="text-[11px] text-slate-500 font-normal">Poodle, Goldendoodle, Bichon</span>
+            </button>
+            <button type="button" data-coat="double" class="coat-btn bg-driftless-800 hover:bg-driftless-700 text-white p-4 rounded-2xl text-left font-semibold text-xs border border-driftless-700 transition">
+              <span class="block text-sm font-bold">Double Coated</span>
+              <span class="text-[11px] text-driftless-300 font-normal">Husky, Lab, Shepherd, Aussie</span>
+            </button>
+            <button type="button" data-coat="short" class="coat-btn bg-driftless-800 hover:bg-driftless-700 text-white p-4 rounded-2xl text-left font-semibold text-xs border border-driftless-700 transition">
+              <span class="block text-sm font-bold">Smooth & Short</span>
+              <span class="text-[11px] text-driftless-300 font-normal">Boxer, Pitbull, Frenchie</span>
+            </button>
+            <button type="button" data-coat="wire" class="coat-btn bg-driftless-800 hover:bg-driftless-700 text-white p-4 rounded-2xl text-left font-semibold text-xs border border-driftless-700 transition">
+              <span class="block text-sm font-bold">Wire / Long Hair</span>
+              <span class="text-[11px] text-driftless-300 font-normal">Schnauzer, Yorkie, Shih Tzu</span>
+            </button>
+          </div>
+
+          <div id="advisorOutputCard" class="mt-8 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 relative z-10 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-4">
+              <div>
+                <span class="text-xs text-honey-400 font-bold uppercase">Optimal Frequency:</span>
+                <h4 id="advisorSchedule" class="text-xl font-heading font-extrabold text-white">Every 4 to 6 Weeks</h4>
+              </div>
+              <span id="advisorBadge" class="badge-pill bg-honey-400 text-slate-900 font-bold self-start sm:self-auto">High Matting Risk</span>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 text-xs text-driftless-100">
+              <div>
+                <strong class="text-white block mb-1">Recommended In-Salon Routine:</strong>
+                <p id="advisorSalonPlan">Full haircut every 4-6 weeks alternating with a Bath & Tidy in between. Prevents painful matting at friction points (armpits and ears).</p>
+              </div>
+              <div>
+                <strong class="text-white block mb-1">Home Care Tip for Driftless Seasons:</strong>
+                <p id="advisorHomeTip">Use a metal line comb daily down to the skin. During Wisconsin snow or muddy spring, dry damp paws thoroughly to avoid pelted fur.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-bark-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=900&q=80" 
+                   alt="Happy healthy dog in Sparta WI" 
+                   class="w-full h-[450px] object-cover"
+                   onerror="this.src='https://placehold.co/800x600/2d4b33/ffffff?text=Driftless+Dog+Co'">
+              
+              <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-bark-100">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-driftless-700 flex items-center justify-center text-white shrink-0">
+                    <i data-lucide="map" class="w-6 h-6 text-honey-400"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-heading font-bold text-sm text-slate-900">Rooted in Monroe County, WI</h3>
+                    <p class="text-xs text-slate-500">Proudly serving dog lovers across Sparta, Bangor, Cashton, and Tomah.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-bold text-driftless-700 uppercase tracking-widest bg-driftless-100 px-3 py-1 rounded-full">
+              Our Story & Philosophy
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+              Calm, Dignified Grooming Tailored to Each Dog's Temperament
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Driftless Dog Co LLC was founded on a simple premise: dog grooming should never be scary. Inspired by the calm and resilient bluffs of the Wisconsin Driftless area, our studio is structured to be quiet, cage-free where appropriate, and thoroughly sanitized between visitors.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-white p-4 rounded-2xl border border-bark-200">
+                <i data-lucide="feather" class="w-5 h-5 text-driftless-600 mb-2"></i>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Stress-Free Handling</h4>
+                <p class="text-xs text-slate-500">We take periodic treat and stretch breaks for anxious pups or seniors with stiff joints.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-bark-200">
+                <i data-lucide="leaf" class="w-5 h-5 text-driftless-600 mb-2"></i>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Natural Ingredients</h4>
+                <p class="text-xs text-slate-500">Sulfate-free, paraben-free shampoos and conditioners made for sensitive skin.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-bark-200">
+                <i data-lucide="clock" class="w-5 h-5 text-driftless-600 mb-2"></i>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Prompt Pick-Ups</h4>
+                <p class="text-xs text-slate-500">You receive a 20-minute notification before completion so dogs spend minimal idle time.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-bark-200">
+                <i data-lucide="shield-alert" class="w-5 h-5 text-driftless-600 mb-2"></i>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Safety First</h4>
+                <p class="text-xs text-slate-500">Strict hygiene protocols, non-slip surfaces, and non-heated air dryers only.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Transformations / Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-bold text-driftless-700 uppercase tracking-widest bg-driftless-100 px-3 py-1 rounded-full">
+              Real Transformations
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+              Before & After in Sparta
+            </h2>
+            <p class="text-slate-600 text-sm mt-1">See how proper hydro-cleaning, de-shedding, and hand-scissoring revives our clients.</p>
+          </div>
+          <div class="flex gap-2" id="galleryFilterButtons">
+            <button class="gallery-toggle-btn active px-4 py-2 rounded-xl text-xs font-bold bg-driftless-700 text-white" data-filter="all">All Pups</button>
+            <button class="gallery-toggle-btn px-4 py-2 rounded-xl text-xs font-bold bg-bark-100 text-slate-700 hover:bg-bark-200" data-filter="doodle">Doodles & Curly</button>
+            <button class="gallery-toggle-btn px-4 py-2 rounded-xl text-xs font-bold bg-bark-100 text-slate-700 hover:bg-bark-200" data-filter="deshed">De-Shedding</button>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8" id="galleryCardsGrid">
+          
+          <div class="gallery-card bg-bark-50 rounded-3xl overflow-hidden border border-bark-200 p-4 space-y-4" data-category="doodle">
+            <div class="grid grid-cols-2 gap-2 relative">
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80" alt="Scruffy doodle before groom" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Before</span>
+              </div>
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?auto=format&fit=crop&w=400&q=80" alt="Fresh fluffy doodle after groom" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-driftless-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">After</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-heading font-bold text-slate-900">Otis (Goldendoodle)</h4>
+                <span class="text-xs text-driftless-700 font-semibold">Full Teddy Cut</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">"Otis was super overgrown after winter. Driftless Dog Co saved his coat without shaving him down completely! 10/10."</p>
+            </div>
+          </div>
+
+          <div class="gallery-card bg-bark-50 rounded-3xl overflow-hidden border border-bark-200 p-4 space-y-4" data-category="deshed">
+            <div class="grid grid-cols-2 gap-2 relative">
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80" alt="Heavy shedding retriever before" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Before</span>
+              </div>
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=400&q=80" alt="Sleek shiny golden retriever after" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-driftless-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">After</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-heading font-bold text-slate-900">Rusty (Golden Mix)</h4>
+                <span class="text-xs text-driftless-700 font-semibold">De-Shed Treatment</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">"The amount of dead undercoat removed was astounding. Our living room carpets are finally fur-free!"</p>
+            </div>
+          </div>
+
+          <div class="gallery-card bg-bark-50 rounded-3xl overflow-hidden border border-bark-200 p-4 space-y-4" data-category="doodle">
+            <div class="grid grid-cols-2 gap-2 relative">
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=400&q=80" alt="Shih Tzu mix scruffy coat before" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Before</span>
+              </div>
+              <div class="relative h-44 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80" alt="Shih Tzu neatly groomed puppy face after" class="w-full h-full object-cover">
+                <span class="absolute top-2 left-2 bg-driftless-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">After</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-heading font-bold text-slate-900">Chloe (Bichon / Poodle)</h4>
+                <span class="text-xs text-driftless-700 font-semibold">Puppy Cut + Facial</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">"Chloe has sensitive eyes and hates head trims. She came out wagging her tail and looking so handsome."</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-16 pt-12 border-t border-bark-200">
+          <div class="text-center max-w-xl mx-auto mb-8">
+            <h3 class="font-heading font-bold text-2xl text-slate-900">Loved by Monroe County Pet Parents</h3>
+            <div class="flex items-center justify-center gap-1 text-honey-500 mt-2">
+              <i data-lucide="star" class="w-5 h-5 fill-honey-400"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-honey-400"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-honey-400"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-honey-400"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-honey-400"></i>
+              <span class="ml-2 text-xs font-bold text-slate-700">5.0 Star Local Reputation</span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="bg-bark-50 p-6 rounded-2xl border border-bark-100 space-y-3">
+              <p class="text-xs text-slate-600 italic">"Finding a groomer in Sparta who handles a 90 lb energetic German Shepherd with patience was tough until we found Driftless Dog Co. Exceptional job!"</p>
+              <div class="text-xs font-bold text-slate-800">— Marcus T., Sparta resident</div>
+            </div>
+            <div class="bg-bark-50 p-6 rounded-2xl border border-bark-100 space-y-3">
+              <p class="text-xs text-slate-600 italic">"The walk-in nail trims are a lifesaver. We drive in from Tomah because they grind them smooth and my beagle isn't trembling when we leave."</p>
+              <div class="text-xs font-bold text-slate-800">— Sarah K., Tomah WI</div>
+            </div>
+            <div class="bg-bark-50 p-6 rounded-2xl border border-bark-100 space-y-3">
+              <p class="text-xs text-slate-600 italic">"Transparent pricing, super clean salon, and you can tell how much they genuinely love dogs. The blueberry facial made her face smell amazing."</p>
+              <div class="text-xs font-bold text-slate-800">— Dave & Heather R., Monroe Co.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-16 bg-bark-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold text-driftless-700 uppercase tracking-widest bg-driftless-100 px-3 py-1 rounded-full">
+            Help & Information
+          </span>
+          <h2 class="font-heading text-3xl font-extrabold text-slate-900 mt-2">Frequently Asked Questions</h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Everything you need to know before visiting our Sparta salon.</p>
+        </div>
+
+        <div class="space-y-3" id="faqAccordion">
+          
+          <div class="faq-item bg-white rounded-2xl border border-bark-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full p-5 text-left flex justify-between items-center text-sm font-bold text-slate-900 hover:text-driftless-700 transition">
+              <span>What vaccinations are required before an appointment?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              For the health and safety of all canine guests, we require dogs to be current on <strong>Rabies</strong> (for all pups over 16 weeks) and <strong>DHPP/Distemper</strong>. We also strongly recommend the <strong>Bordetella (Kennel Cough)</strong> vaccine. You can upload a photo during confirmation or bring vet paperwork at drop-off.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-bark-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full p-5 text-left flex justify-between items-center text-sm font-bold text-slate-900 hover:text-driftless-700 transition">
+              <span>How long does a full groom session take?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Most small to medium grooms take between 1.5 to 2 hours. Large breeds or heavy de-shedding coats take roughly 2 to 2.5 hours. Because we schedule 1-on-1, your dog is never sitting in a crate for hours waiting their turn. We text you 20 minutes before they are ready for pickup!
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-bark-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full p-5 text-left flex justify-between items-center text-sm font-bold text-slate-900 hover:text-driftless-700 transition">
+              <span>What if my dog is anxious, fearful, or has never been groomed?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              We specialize in patient handling! We introduce equipment slowly, use gentle warm air instead of roaring cage driers, and allow frequent treat praise breaks. If a dog reaches their stress limit, we pause and prioritize their emotional safety over a salon-perfect look.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-bark-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full p-5 text-left flex justify-between items-center text-sm font-bold text-slate-900 hover:text-driftless-700 transition">
+              <span>What is your policy on severely matted coats?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              We practice "humanity over vanity." If a coat is pelted or severely matted to the skin, de-matting causes extreme pain and skin irritation. In these cases, we will safely clip under the mats to provide a fresh start and guide you on an easy home regimen to rebuild their coat.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-bark-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full p-5 text-left flex justify-between items-center text-sm font-bold text-slate-900 hover:text-driftless-700 transition">
+              <span>Do you accept walk-ins for nail trims?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Yes! Walk-in nail clips and filing are welcome Tuesday through Friday between 11:00 AM and 2:00 PM ($15). For full haircuts and baths, scheduled appointments are required to maintain a calm environment.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-12">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-bold text-driftless-700 uppercase tracking-widest bg-driftless-100 px-3 py-1 rounded-full">
+              Find Our Sparta Studio
+            </span>
+            <h2 class="font-heading text-3xl font-extrabold text-slate-900">
+              Visit Driftless Dog Co LLC
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Located conveniently in Sparta, WI—the Bicycling Capital of America—near downtown dining and scenic walking trails.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-driftless-50 flex items-center justify-center text-driftless-700 shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-slate-900 uppercase">Salon Address</h3>
+                  <p class="text-sm text-slate-700 font-medium">118 N Water St, Sparta, WI 54656</p>
+                  <span class="text-xs text-slate-400">Easy curbside pet drop-off & rear parking</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-driftless-50 flex items-center justify-center text-driftless-700 shrink-0">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-slate-900 uppercase">Telephone / Text</h3>
+                  <a href="tel:6082693647" class="text-sm font-bold text-driftless-700 hover:underline">(608) 269-3647 (DOGS)</a>
+                  <p class="text-xs text-slate-400">Call or text for questions or same-day inquiries</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-driftless-50 flex items-center justify-center text-driftless-700 shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-slate-900 uppercase">Hours of Operation</h3>
+                  <div class="text-xs text-slate-600 space-y-0.5 mt-1">
+                    <div class="flex justify-between w-48"><span>Tuesday – Friday:</span> <strong class="text-slate-800">8:30 AM – 4:30 PM</strong></div>
+                    <div class="flex justify-between w-48"><span>Saturday:</span> <strong class="text-slate-800">9:00 AM – 3:00 PM</strong></div>
+                    <div class="flex justify-between w-48"><span>Sunday – Monday:</span> <span class="text-slate-400 font-medium">Closed (Family Rest)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-bark-50 rounded-2xl p-4 border border-bark-200 flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold text-slate-900 block">Traveling from Tomah or La Crosse?</span>
+                <span class="text-[11px] text-slate-500">Just 2 minutes off I-90 Exit 25 / WI-21</span>
+              </div>
+              <a href="https://maps.google.com/?q=Sparta+WI" target="_blank" rel="noopener" class="text-xs font-bold text-driftless-700 hover:underline flex items-center gap-1">
+                Open Maps <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="lg:col-span-7 bg-bark-50 rounded-3xl p-6 sm:p-8 border border-bark-200">
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-1">Send a Message to Our Groomer</h3>
+            <p class="text-xs text-slate-500 mb-6">Have questions about specific skin allergies, doodle coats, or scheduling multi-dog families?</p>
+
+            <form id="contactForm" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactName" class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                  <input type="text" id="contactName" placeholder="Alex Morgan" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-driftless-600 focus:outline-none bg-white">
+                </div>
+                <div>
+                  <label for="contactPhone" class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                  <input type="tel" id="contactPhone" placeholder="(608) 555-0144" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-driftless-600 focus:outline-none bg-white">
+                </div>
+              </div>
+
+              <div>
+                <label for="contactDog" class="block text-xs font-bold text-slate-700 mb-1">Dog's Breed & Age</label>
+                <input type="text" id="contactDog" placeholder="e.g. 3-year-old Springer Spaniel" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-driftless-600 focus:outline-none bg-white">
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-bold text-slate-700 mb-1">How can we assist you? *</label>
+                <textarea id="contactMessage" rows="3" placeholder="Tell us about your dog's grooming history or questions..." required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-driftless-600 focus:outline-none bg-white"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-driftless-700 hover:bg-driftless-800 text-white font-heading font-bold py-3 rounded-xl transition duration-200 shadow-md flex items-center justify-center gap-2">
+                <span>Send Message to Driftless Dog Co</span>
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </button>
+            </form>
+
+            <div id="contactSuccessMsg" class="hidden mt-4 p-4 rounded-xl bg-driftless-100 border border-driftless-300 text-driftless-800 text-xs flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-5 h-5 text-driftless-700 shrink-0"></i>
+              <span>Thank you! Your message has been sent. We will reply to your phone or email shortly!</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-driftless-900 text-slate-300 text-xs py-12 border-t border-driftless-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-8 border-b border-driftless-800">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-driftless-700 flex items-center justify-center text-white">
+              <i data-lucide="sparkles" class="w-4 h-4 text-honey-400"></i>
+            </div>
+            <span class="font-heading font-bold text-base text-white">Driftless Dog Co LLC</span>
+          </div>
+          <p class="text-driftless-200 leading-relaxed text-[11px]">
+            Compassionate, personalized canine grooming salon serving Sparta, Tomah, and the scenic Driftless ridges of Western Wisconsin.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Quick Navigation</h4>
+          <ul class="space-y-2 text-[11px]">
+            <li><a href="#services" class="hover:text-white transition">Full Grooming Packages</a></li>
+            <li><a href="#booking-estimator" class="hover:text-white transition">Online Price Estimator</a></li>
+            <li><a href="#coat-advisor" class="hover:text-white transition">Coat Care Interval Guide</a></li>
+            <li><a href="#about" class="hover:text-white transition">Fear-Free Philosophy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Service Area</h4>
+          <ul class="space-y-1.5 text-[11px] text-driftless-200">
+            <li>• Sparta, WI (Downtown & Surrounding)</li>
+            <li>• Tomah & Oakdale</li>
+            <li>• Bangor & Rockland</li>
+            <li>• Cashton & Monroe County</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Salon Policies</h4>
+          <p class="text-[11px] text-driftless-200 leading-relaxed">
+            Rabies vaccination required. 24-hour cancellation notice appreciated. Certified gentle handling guarantee.
+          </p>
+          <div class="mt-3">
+            <span class="inline-block bg-driftless-800 text-honey-400 px-3 py-1 rounded-md text-[10px] font-mono">
+              Reg LLC • Monroe County, WI
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-driftless-400 gap-2">
+        <p>© <span id="currentYear">2026</span> Driftless Dog Co LLC. All rights reserved.</p>
+        <p class="flex items-center gap-1">Crafted with care for Wisconsin pups <i data-lucide="paw-print" class="w-3.5 h-3.5 text-driftless-300"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Booking Estimator state
+    const state = {
+      dogName: '',
+      sizeKey: 'small',
+      sizeMultiplier: 1.0,
+      sizeLabel: 'Small (< 20 lbs)',
+      serviceKey: 'full-groom',
+      serviceBasePrice: 65,
+      serviceName: 'The Driftless Signature Full Groom',
+      serviceDurationMinutes: 120,
+      addons: []
+    };
+
+    const dogNameInput = document.getElementById('dogName');
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    const serviceRadioInputs = document.querySelectorAll('input[name="groomService"]');
+    const addOnCheckboxes = document.querySelectorAll('.addon-checkbox');
+
+    const summaryDogName = document.getElementById('summaryDogName');
+    const summarySizeLabel = document.getElementById('summarySizeLabel');
+    const summaryServiceName = document.getElementById('summaryServiceName');
+    const summaryServicePrice = document.getElementById('summaryServicePrice');
+    const summaryAddonsList = document.getElementById('summaryAddonsList');
+    const summaryDuration = document.getElementById('summaryDuration');
+    const summaryTotal = document.getElementById('summaryTotal');
+
+    dogNameInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      state.dogName = val;
+      summaryDogName.textContent = val ? val : 'Your Pup';
+    });
+
+    sizeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sizeButtons.forEach(b => {
+          b.classList.remove('active', 'border-2', 'border-driftless-600', 'bg-driftless-50');
+          b.classList.add('border-slate-200', 'bg-white');
+        });
+        btn.classList.add('active', 'border-2', 'border-driftless-600', 'bg-driftless-50');
+        btn.classList.remove('border-slate-200', 'bg-white');
+
+        state.sizeKey = btn.dataset.size;
+        state.sizeMultiplier = parseFloat(btn.dataset.priceMult);
+        state.sizeLabel = btn.querySelector('span').textContent;
+        recalculateEstimate();
+      });
+    });
+
+    serviceRadioInputs.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        document.querySelectorAll('.service-card').forEach(card => {
+          card.classList.remove('border-2', 'border-driftless-600');
+          card.classList.add('border-slate-200');
+        });
+        const parentCard = e.target.closest('.service-card');
+        if (parentCard) {
+          parentCard.classList.remove('border-slate-200');
+          parentCard.classList.add('border-2', 'border-driftless-600');
+        }
+
+        state.serviceKey = e.target.value;
+        state.serviceBasePrice = parseFloat(e.target.dataset.base);
+        state.serviceDurationMinutes = parseInt(e.target.dataset.duration, 10);
+        state.serviceName = e.target.closest('label').querySelector('.font-bold').textContent;
+        recalculateEstimate();
+      });
+    });
+
+    addOnCheckboxes.forEach(chk => {
+      chk.addEventListener('change', () => {
+        recalculateAddons();
+      });
+    });
+
+    function recalculateAddons() {
+      state.addons = [];
+      addOnCheckboxes.forEach(chk => {
+        if (chk.checked) {
+          const itemLabel = chk.closest('.addon-item').querySelector('.font-semibold').textContent;
+          const price = parseFloat(chk.dataset.price);
+          const min = parseInt(chk.dataset.min, 10);
+          state.addons.push({
+            id: chk.value,
+            name: itemLabel,
+            price: price,
+            min: min
+          });
+        }
+      });
+      recalculateEstimate();
+    }
+
+    function recalculateEstimate() {
+      const calculatedBase = Math.round(state.serviceBasePrice * state.sizeMultiplier);
+      const addonsTotal = state.addons.reduce((sum, item) => sum + item.price, 0);
+      const totalCost = calculatedBase + addonsTotal;
+
+      const addonsTime = state.addons.reduce((sum, item) => sum + item.min, 0);
+      const totalMinutes = state.serviceDurationMinutes + addonsTime;
+      const hours = Math.floor(totalMinutes / 60);
+      const mins = totalMinutes % 60;
+      const formattedDuration = `~ ${hours} hr${hours > 1 ? 's' : ''} ${mins > 0 ? mins + ' mins' : ''}`;
+
+      summarySizeLabel.textContent = state.sizeLabel;
+      summaryServiceName.textContent = state.serviceName;
+      summaryServicePrice.textContent = `$${calculatedBase}.00`;
+      summaryDuration.textContent = formattedDuration;
+      summaryTotal.textContent = `$${totalCost}.00`;
+
+      if (state.addons.length === 0) {
+        summaryAddonsList.innerHTML = `<p class="italic text-driftless-300">No add-ons selected</p>`;
+      } else {
+        summaryAddonsList.innerHTML = state.addons.map(a => `
+          <div class="flex justify-between items-center text-driftless-100">
+            <span>+ ${a.name}</span>
+            <span class="text-white font-medium">+$${a.price}.00</span>
+          </div>
+        `).join('');
+      }
+    }
+
+    recalculateEstimate();
+
+    // Modal logic
+    const confirmBookingBtn = document.getElementById('confirmBookingBtn');
+    const bookingModal = document.getElementById('bookingModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const doneModalBtn = document.getElementById('doneModalBtn');
+    const printConfirmationBtn = document.getElementById('printConfirmationBtn');
+
+    const modalRefCode = document.getElementById('modalRefCode');
+    const modalDogName = document.getElementById('modalDogName');
+    const modalServiceName = document.getElementById('modalServiceName');
+    const modalDateTime = document.getElementById('modalDateTime');
+    const modalTotal = document.getElementById('modalTotal');
+
+    confirmBookingBtn.addEventListener('click', () => {
+      const name = document.getElementById('dogName').value.trim();
+      const breed = document.getElementById('dogBreed').value.trim();
+      const date = document.getElementById('bookingDate').value;
+      const time = document.getElementById('bookingTime').value;
+      const owner = document.getElementById('ownerName').value.trim();
+      const phone = document.getElementById('ownerPhone').value.trim();
+
+      if (!name || !breed || !date || !owner || !phone) {
+        confirmBookingBtn.classList.add('bg-rose-500', 'text-white');
+        confirmBookingBtn.textContent = 'Please fill out required fields (*) above';
+        setTimeout(() => {
+          confirmBookingBtn.classList.remove('bg-rose-500', 'text-white');
+          confirmBookingBtn.classList.add('bg-honey-500', 'text-slate-950');
+          confirmBookingBtn.innerHTML = `<span>Request Appointment Now</span> <i data-lucide="check" class="w-5 h-5"></i>`;
+          lucide.createIcons();
+        }, 2500);
+        return;
+      }
+
+      const randomCode = '#DDC-' + Math.floor(1000 + Math.random() * 9000);
+      modalRefCode.textContent = randomCode;
+      modalDogName.textContent = `${name} (${breed})`;
+      modalServiceName.textContent = state.serviceName;
+      modalDateTime.textContent = `${date} | ${time}`;
+      modalTotal.textContent = summaryTotal.textContent;
+
+      bookingModal.classList.remove('hidden');
+    });
+
+    closeModalBtn.addEventListener('click', () => bookingModal.classList.add('hidden'));
+    doneModalBtn.addEventListener('click', () => bookingModal.classList.add('hidden'));
+    
+    printConfirmationBtn.addEventListener('click', () => {
+      window.print();
+    });
+
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        bookingModal.classList.add('hidden');
+      }
+    });
+
+    // Coat Care Advisor Logic
+    const coatData = {
+      doodle: {
+        frequency: 'Every 4 to 6 Weeks',
+        badge: 'High Matting Risk',
+        badgeClass: 'bg-honey-400 text-slate-900',
+        salonPlan: 'Full haircut every 4-6 weeks alternating with a Bath & Tidy in between. Prevents painful matting at friction points (armpits and ears).',
+        homeTip: 'Use a metal line comb daily down to the skin. During Wisconsin snow or muddy spring, dry damp paws thoroughly to avoid pelted fur.'
+      },
+      double: {
+        frequency: 'Every 6 to 8 Weeks',
+        badge: 'Heavy Shedding Coat',
+        badgeClass: 'bg-driftless-200 text-driftless-900',
+        salonPlan: 'Specialized De-shedding soak and high-velocity blowout. Never shave a double coat unless medically required, as it damages thermal regulation.',
+        homeTip: 'Rake through undercoat twice a week with an undercoat rake. Brush before giving baths at home to avoid tangling shed fur into felt.'
+      },
+      short: {
+        frequency: 'Every 8 to 10 Weeks',
+        badge: 'Low Maintenance',
+        badgeClass: 'bg-emerald-100 text-emerald-900',
+        salonPlan: 'Hydrosurge bath, deep deshedding rubber curry scrub, nail dremel, and ear flush to keep skin allergies and odors at bay.',
+        homeTip: 'Wipe paws and belly after walks in tall Driftless bluffs grass. Apply paw pad balm during Sparta sub-zero winter temperatures.'
+      },
+      wire: {
+        frequency: 'Every 5 to 7 Weeks',
+        badge: 'Texture Maintenance',
+        badgeClass: 'bg-amber-100 text-amber-900',
+        salonPlan: 'Custom hand-scissoring or carding/clipping to keep furnishings crisp, clean beard washes, and hygiene sanitary trimming.',
+        homeTip: 'Daily comb-through of beards and leg furnishings after meals to remove food debris and stickers picked up on local trails.'
+      }
+    };
+
+    const coatButtons = document.querySelectorAll('.coat-btn');
+    const advisorSchedule = document.getElementById('advisorSchedule');
+    const advisorBadge = document.getElementById('advisorBadge');
+    const advisorSalonPlan = document.getElementById('advisorSalonPlan');
+    const advisorHomeTip = document.getElementById('advisorHomeTip');
+
+    coatButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        coatButtons.forEach(b => {
+          b.classList.remove('active', 'bg-white', 'text-slate-900', 'border-2', 'border-honey-400');
+          b.classList.add('bg-driftless-800', 'text-white', 'border-driftless-700');
+          const sub = b.querySelector('.text-slate-500');
+          if (sub) {
+            sub.classList.remove('text-slate-500');
+            sub.classList.add('text-driftless-300');
+          }
+        });
+
+        btn.classList.add('active', 'bg-white', 'text-slate-900', 'border-2', 'border-honey-400');
+        btn.classList.remove('bg-driftless-800', 'text-white', 'border-driftless-700');
+        const sub = btn.querySelector('.text-driftless-300');
+        if (sub) {
+          sub.classList.remove('text-driftless-300');
+          sub.classList.add('text-slate-500');
+        }
+
+        const coat = btn.dataset.coat;
+        const details = coatData[coat];
+        if (details) {
+          advisorSchedule.textContent = details.frequency;
+          advisorBadge.textContent = details.badge;
+          advisorBadge.className = `badge-pill self-start sm:self-auto font-bold ${details.badgeClass}`;
+          advisorSalonPlan.textContent = details.salonPlan;
+          advisorHomeTip.textContent = details.homeTip;
+        }
+      });
+    });
+
+    // Gallery Filters
+    const filterButtons = document.querySelectorAll('.gallery-toggle-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'bg-driftless-700', 'text-white');
+          b.classList.add('bg-bark-100', 'text-slate-700');
+        });
+        btn.classList.add('active', 'bg-driftless-700', 'text-white');
+        btn.classList.remove('bg-bark-100', 'text-slate-700');
+
+        const filter = btn.dataset.filter;
+        galleryCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-btn');
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon');
+
+      btn.addEventListener('click', () => {
+        const isExpanded = !content.classList.contains('hidden');
+        faqItems.forEach(other => {
+          other.querySelector('.faq-content').classList.add('hidden');
+          other.querySelector('.faq-icon').classList.remove('rotate-180');
+        });
+
+        if (!isExpanded) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Contact Form
+    const contactForm = document.getElementById('contactForm');
+    const contactSuccessMsg = document.getElementById('contactSuccessMsg');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactForm.classList.add('opacity-50', 'pointer-events-none');
+      setTimeout(() => {
+        contactForm.reset();
+        contactForm.classList.remove('opacity-50', 'pointer-events-none');
+        contactSuccessMsg.classList.remove('hidden');
+        setTimeout(() => {
+          contactSuccessMsg.classList.add('hidden');
+        }, 6000);
+      }, 700);
+    });
+  </script>
+</body>
+</html>
